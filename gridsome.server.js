@@ -6,8 +6,15 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = function (api) {
+  // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+  // TODO: try a front-matter template for data and a page in forestry.io
+  // https://forestry.io/docs/settings/front-matter-templates/#applying-fmts-to-content
   api.loadSource(({ addCollection }) => {
-    // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+    const Camps = require('./data/camps.json');
+    const collection = addCollection({ typeName: 'Camp' });
+    for (const camp of Camps) {
+      collection.addNode(camp);
+    }
   })
 
   api.createPages(({ createPage }) => {

@@ -16,7 +16,7 @@ module.exports = {
     }
   ],
   templates: {
-    Post: '/p/:slug'
+    Post: '/:slug'
   },
   transformers: {
     remark: {}
