@@ -5,6 +5,20 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Gridsome',
-  plugins: []
+  siteName: 'Silver Lake Wesleyan Camp',
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        typeName: 'Post',
+        path: './content/*.md',
+      }
+    }
+  ],
+  templates: {
+    Post: '/p/:slug'
+  },
+  transformers: {
+    remark: {}
+  }
 }
