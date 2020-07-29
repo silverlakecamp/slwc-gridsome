@@ -6,6 +6,8 @@
 
 module.exports = {
   siteName: 'Silver Lake Wesleyan Camp',
+  siteUrl: 'https://silverlakecamp.github.io',
+  pathPrefix: '/slwc-gridsome',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
