@@ -8,10 +8,11 @@ fields:
   fields:
   - type: text
     name: day
-    label: day
+    label: Weekday Day Camp
+    description: The date range for weekday camps
   - type: text
     name: weekend
-    label: weekend
+    label: Weekend Day Camp
   - type: boolean
     name: available
-    label: available
+    label: Registration Status
