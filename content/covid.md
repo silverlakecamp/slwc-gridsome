@@ -7,8 +7,6 @@ carousel_images:
 - "/3.jpg"
 
 ---
-![](/slwc-gridsome/uploads/slwc_text_black.png)
-
 # COVID-19 Response : May 4, 2020
 
 ### May 4, 2020 Update
