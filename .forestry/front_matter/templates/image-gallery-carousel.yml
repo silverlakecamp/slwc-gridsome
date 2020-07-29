@@ -1,0 +1,6 @@
+type: image_gallery
+name: carousel image gallery
+label: Carousel
+description: A section for images that auto rotate
+default:
+  - "/static/uploads/slwc_text_black.png"
