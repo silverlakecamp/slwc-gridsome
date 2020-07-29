@@ -1,0 +1,17 @@
+---
+label: Data File
+hide_body: true
+fields:
+- type: field_group_list
+  name: Camps
+  label: Camps
+  fields:
+  - type: text
+    name: day
+    label: day
+  - type: text
+    name: weekend
+    label: weekend
+  - type: boolean
+    name: available
+    label: available
