@@ -1,6 +1,10 @@
 ---
 slug: covid
 title: SLWC Covid Response
+carousel_images:
+- "/1.jpg"
+- "/5.jpg"
+- "/3.jpg"
 
 ---
 ![](/slwc-gridsome/uploads/slwc_text_black.png)

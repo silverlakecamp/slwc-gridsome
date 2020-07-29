@@ -7,3 +7,5 @@ fields:
   config: {}
   label: Carousel Images
   description: A section for images that auto rotate in a carousel
+pages:
+- content/covid.md
