@@ -3,9 +3,9 @@ slug: covid
 title: SLWC Covid Response
 
 ---
-![](/uploads/slwc_logo_color.png)
-
 # COVID-19 Response : May 4, 2020
+
+![](/uploads/slwc_logo_color.png)
 
 ### May 4, 2020 Update
 
