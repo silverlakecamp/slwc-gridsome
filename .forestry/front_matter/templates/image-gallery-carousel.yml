@@ -2,18 +2,18 @@
 label: Page With Carousel
 hide_body: false
 fields:
+- name: title
+  type: text
+  label: Title
+  description: Title of this page that will appear in the browser bar
+- name: slug
+  type: text
+  label: Slug
+  description: The URL where this page will live on slwc.ca
 - name: carousel_images
   type: image_gallery
   config: {}
   label: Carousel Images
   description: A section for images that auto rotate in a carousel
-- name: slug
-  type: text
-  label: Slug
-  description: The URL where this page will live on slwc.ca
-- name: title
-  type: text
-  label: Title
-  description: Title of this page that will appear in the browser bar
 pages:
 - content/covid.md
