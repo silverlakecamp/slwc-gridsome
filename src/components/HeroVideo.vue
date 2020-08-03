@@ -16,6 +16,7 @@
 
 <template>
   <section id="hero" class="hidden-xs-only">
+    <!-- TODO: this minHeight isnt working -->
     <v-container fluid pa-0 :height="minHeight">
       <div class="bg-video">
         <base-img
@@ -49,7 +50,7 @@
       },
 
       overlayHeight () {
-        const height = this.$vuetify.breakpoint.lgAndUp ? '60%' : '300px'
+        const height = this.$vuetify.breakpoint.lgAndUp ? '35%' : '300px'
 
         return `calc(${height} - ${this.$vuetify.application.top}px)`
       }

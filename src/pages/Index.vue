@@ -2,6 +2,8 @@
   <Layout>
     <hero-video />
     <sub-nav />
+    <camp-map />
+    <camp-info />
   </Layout>
 </template>
 

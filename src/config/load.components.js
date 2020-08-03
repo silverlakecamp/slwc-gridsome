@@ -8,7 +8,7 @@ export default function loadComponents(components) {
 
     if(config.default.name) {
       Vue.component(`${config.default.name}`, config.default)
-      console.info(`Pre-loaded ${config.default.name} found in ~src/components/${file} ...`)
+      console.debug(`Pre-loaded ${config.default.name} found in ~src/components/${file} ...`)
     } else {
       console.error(`Error pre-loading ~src/components/${file}, did you forget a default export?`)
     }
