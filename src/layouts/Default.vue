@@ -1,7 +1,9 @@
 <template>
   <v-app>
     <app-bar />
-    <base-view />
+    <v-main>
+      <slot />
+    </v-main>
 <!--     <app-view />
     <app-map />
     <app-info />

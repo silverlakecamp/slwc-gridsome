@@ -1,13 +1,14 @@
 <template>
   <Layout>
-    <p>Hi mom</p>
+    <hero-video />
+    <sub-nav />
   </Layout>
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Hello, world!'
+    title: 'SLWC'
   }
 }
 </script>
