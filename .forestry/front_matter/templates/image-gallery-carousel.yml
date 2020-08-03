@@ -16,6 +16,6 @@ fields:
   label: Carousel Images
   description: A section for images that auto rotate in a carousel
   default:
-    - /uploads/1.jpg
+  - "/uploads/1.jpg"
 pages:
 - content/covid.md
