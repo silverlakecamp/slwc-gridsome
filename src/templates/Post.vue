@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <article v-html="$page.post.content" />
+    <VueRemarkContent />
   </Layout>
 </template>
 
@@ -10,7 +10,7 @@ query Post ($path: String!) {
     id
     title
     content
-    timeToRead
+    carousel_images
   }
 }
 </page-query>
