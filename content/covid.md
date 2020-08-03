@@ -11,6 +11,8 @@ carousel_images:
 
 ### May 4, 2020 Update
 
+> {{ $frontmatter.carousel_images }}
+
 _Young Adult Retreat & Collide Weekend_ - It is with heavy hearts that the SLWC Board has decided that due to current COVID-19 pandemic we will be cancelling Young Adult Retreat 2020 (June 5-7) and Collide Weekend 2020 (June 12-14). Though we are saddened that we cannot be together this year for these two amazing events at the lake we are hopeful and look forward to bringing them back better than ever in 2021.
 
 _SLWC Annual Meeting_ - The SLWC Annual Meeting which is traditionally help on the May long weekend has been postponed. When we are able to reschedule the date we will let you know.

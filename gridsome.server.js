@@ -5,10 +5,32 @@
 // Changes here require a server restart.
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
+const path = require('path')
+const VuetifyLoaderPlugin = require('vuetify-loader/lib/plugin');
+const VUE_FILES = ['vue-modules', 'vue', 'normal-modules','normal']
+
+function addStyleResource(rule) {
+  rule.use('style-resource')
+    .loader('style-resources-loader')
+    .options({
+      patterns: [
+        path.resolve(__dirname, './src/styles/vuetify.variables.sass')
+      ]
+    })
+}
+
 module.exports = function (api) {
   // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
-  // TODO: try a front-matter template for data and a page in forestry.io
-  // https://forestry.io/docs/settings/front-matter-templates/#applying-fmts-to-content
+  api.chainWebpack((config, { isServer }) => {
+    VUE_FILES.forEach(type => {
+      addStyleResource(config.module.rule('sass').oneOf(type))
+    })
+  })
+
+  api.chainWebpack((config, { isServer }) => {
+    config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
+  })
+
   api.loadSource(({ addCollection }) => {
     const Camps = require('./data/camps.json');
     const collection = addCollection({ typeName: 'Camp' });
