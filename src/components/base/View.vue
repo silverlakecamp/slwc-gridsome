@@ -1,8 +1,6 @@
 <template>
   <v-main>
-    <v-fade-transition mode="out-in">
-      <slot />
-    </v-fade-transition>
+    <slot />
   </v-main>
 </template>
 

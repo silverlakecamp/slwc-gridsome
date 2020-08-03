@@ -31,7 +31,7 @@
 
 <script>
   export default {
-    name: 'HomeDrawer',
+    name: 'Drawer',
 
     props: {
       items: {

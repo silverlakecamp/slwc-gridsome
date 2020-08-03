@@ -3,16 +3,14 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import loadWebFonts from './config/load.webfonts'
-import loadBaseComponents from './config/load.basecomponents'
+import loadComponents from './config/load.components'
 import loadVuetify from './config/load.vuetify'
 
 export default function (Vue, { appOptions, head }) {
 
-  const baseComponents = require.context('~/components/base', true, /\.vue$/)
-
   loadWebFonts(head)
   loadVuetify(appOptions)
-  loadBaseComponents(baseComponents)
+  loadComponents(require.context('~/components', true, /\.vue$/))
 
   Vue.component('Layout', DefaultLayout)
 }
