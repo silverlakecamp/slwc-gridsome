@@ -20,17 +20,20 @@ function addStyleResource(rule) {
 }
 
 module.exports = function (api) {
-  // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
+
+  // https://gridsome.org/docs/assets-css/#global-preprocessor-files-ie-variables-mixins
   api.chainWebpack((config, { isServer }) => {
     VUE_FILES.forEach(type => {
       addStyleResource(config.module.rule('sass').oneOf(type))
     })
   })
 
+  // https://gridsome.org/docs/assets-css/#vuetify
   api.chainWebpack((config, { isServer }) => {
     config.plugin('vuetify-loader').use(VuetifyLoaderPlugin);
   })
 
+  // Use the Data Store API here: https://gridsome.org/docs/data-store-api/
   api.loadSource(({ addCollection }) => {
     const Camps = require('./data/camps.json');
     const collection = addCollection({ typeName: 'Camp' });

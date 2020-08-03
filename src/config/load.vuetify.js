@@ -15,7 +15,7 @@ export default function loadVuetify(appOptions) {
       dark: false,
       themes: {
         light: {
-          primary: '#42a5f6',
+          primary: '#b0c954',
           secondary: '#050b1f',
           accent: '#204165',
         },

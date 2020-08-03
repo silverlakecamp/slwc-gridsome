@@ -8,9 +8,11 @@ import loadVuetify from './config/load.vuetify'
 
 export default function (Vue, { appOptions, head }) {
 
-  Vue.component('Layout', DefaultLayout)
+  const baseComponents = require.context('~/components/base', true, /\.vue$/)
 
   loadWebFonts(head)
   loadVuetify(appOptions)
-  loadBaseComponents()
+  loadBaseComponents(baseComponents)
+
+  Vue.component('Layout', DefaultLayout)
 }
