@@ -10,17 +10,13 @@ module.exports = {
   pathPrefix: '/slwc-gridsome',
   plugins: [
     {
-      use: '@gridsome/source-filesystem',
+      use: '@gridsome/vue-remark',
       options: {
         typeName: 'Post',
-        path: './content/*.md',
+        baseDir: './content',
+        template: './src/templates/Post.vue',
+        route: '/:slug'
       }
     }
-  ],
-  templates: {
-    Post: '/:slug'
-  },
-  transformers: {
-    remark: {}
-  }
+  ]
 }
